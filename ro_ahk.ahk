@@ -118,23 +118,3 @@ If state3
 Else
     Gui Destroy
 Return
-
-F7::
-State3:=!State3
-
-If state3
-{
-    CustomColor3 = EEAA99
-    Gui +LastFound +AlwaysOnTop -Caption +ToolWindow 
-    Gui, Color, black
-    Gui, Font, s7
-    Gui, Font, cWhite
-    Gui, Font, w1000
-    GUI, ADD, TEXT, cYellow, =====================[УПК ч.2]========================
-
-    WinSet, TransColor, %CustomColor3% 180
-    Gui, Show, x5 y1 NoActivate, window. 
-}
-Else
-    Gui Destroy
-Return
